@@ -1,0 +1,11 @@
+dash
+pandas
+plotly
+numpy
+seaborn
+keras
+tesnorflow
+gunicorn
+# plotly.subplots
+# plotly.express
+# plotly.graph_objects
