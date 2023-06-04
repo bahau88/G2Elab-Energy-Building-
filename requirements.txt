@@ -1,10 +1,11 @@
+pip==23.1.2
 dash
 pandas
 plotly
 numpy
 seaborn
 keras
-tesnorflow
+tensorflow
 gunicorn
 # plotly.subplots
 # plotly.express
