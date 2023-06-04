@@ -3,6 +3,7 @@ dash
 pandas
 plotly
 numpy
+scikit-learn
 seaborn
 keras
 tensorflow
