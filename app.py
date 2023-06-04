@@ -443,6 +443,7 @@ fig_rf.update_layout(
 )
 
 fig_rf.show()
+'''
 #----------------------------------------------------------------------------------- Forecast
 
 import numpy as np
@@ -597,7 +598,7 @@ fig_prediction.add_trace(go.Bar(x=last_three_days.index, y=last_three_days['Cons
 fig_prediction.add_trace(go.Bar(x=predicted_days.index, y=predicted_days['Consumption'], name='Predicted days', showlegend=False,))
 fig_prediction.update_layout(plot_bgcolor='white', xaxis_title='Date', yaxis_title='Electricity consumption')
 fig_prediction.show()
-
+'''
 
 #---------------------------------------FINISH
 
@@ -792,7 +793,7 @@ app.layout = html.Div(
                    'display': 'flex',
                    'flex-wrap': 'wrap'}  # Set the background color to #000 (black)
         ),
-
+'''
         # Graphs fourth row
         html.Div(
             children=[
@@ -844,6 +845,7 @@ app.layout = html.Div(
                    'display': 'flex',
                    'flex-wrap': 'wrap'}  # Set the background color to #000 (black)
         ),
+      '''
 
         # Graphs fifth row
         html.Div(
