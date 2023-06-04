@@ -523,7 +523,7 @@ train_predictions = model.predict(X)
 fig_tp = go.Figure()
 fig_tp.add_trace(go.Scatter(x=data.index, y=Y, name='True Consumption', showlegend=False, line_color='orange'))
 fig_tp.add_trace(go.Scatter(x=data.index, y=train_predictions.flatten(), name='Predicted Consumption', showlegend=False, line_color='red'))
-fig_tp.update_layout(title='True vs. Predicted Consumption for Training Data',
+fig_tp.update_layout(
                   plot_bgcolor='white',
                   xaxis_title='Date and Time', yaxis_title='Consumption')
 fig_tp.show()
@@ -560,7 +560,6 @@ fig_tvl.add_trace(go.Scatter(
 
 # Update the layout
 fig_tvl.update_layout(
-    title='Training and Validation Loss',
     plot_bgcolor='white',
     xaxis_title='Epoch',
     yaxis_title='Loss',
@@ -596,7 +595,7 @@ predicted_days = pd.DataFrame(predictions, columns=['Consumption'], index=dateti
 fig_prediction = go.Figure()
 fig_prediction.add_trace(go.Bar(x=last_three_days.index, y=last_three_days['Consumption'], name='Previous days', showlegend=False,))
 fig_prediction.add_trace(go.Bar(x=predicted_days.index, y=predicted_days['Consumption'], name='Predicted days', showlegend=False,))
-fig_prediction.update_layout(title='Electricity consumption forecast', plot_bgcolor='white', xaxis_title='Date', yaxis_title='Electricity consumption')
+fig_prediction.update_layout(plot_bgcolor='white', xaxis_title='Date', yaxis_title='Electricity consumption')
 fig_prediction.show()
 
 
