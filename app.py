@@ -793,59 +793,6 @@ app.layout = html.Div(
                    'display': 'flex',
                    'flex-wrap': 'wrap'}  # Set the background color to #000 (black)
         ),
-'''
-        # Graphs fourth row
-        html.Div(
-            children=[
-                html.Div(
-                    [html.Span("Forecast: True and Prediction", style={'font-family' : 'calibri', 'font-weight': '300', 'font-size': '20px', 'display': 'block'}),
-                     html.Span("Neural Network ML Model for the electricity prediction", style={'font-family' : 'calibri', 'font-weight': '300', 'font-size': '14px', 'line-height' : '40px', 'display': 'block'}),
-                    dcc.Graph(figure=fig_tp)
-                    ],
-                    style ={'width': '29%',
-                            'padding' :'1%',
-                            'margin': '1%',
-                            'font-size': '25px',
-                            'border-radius': '10px',
-                            'background': '#fff',
-                            'display': 'inline-block'},
-                ),
-
-                html.Div(
-                    [html.Span("Training Loss and Validation", style={'font-family' : 'calibri', 'font-weight': '300', 'font-size': '20px', 'display': 'block'}),
-                     html.Span("10 Epoch - 10 Batch size - 2 Verbose", style={'font-family' : 'calibri', 'font-weight': '300', 'font-size': '14px', 'line-height' : '40px', 'display': 'block'}),
-                    dcc.Graph(figure=fig_tvl)
-                    ],
-                    style ={'width': '29%',
-                            'padding' :'1%',
-                            'margin': '1%',
-                            'font-size': '25px',
-                            'border-radius': '10px',
-                            'background': '#fff',
-                            'display': 'inline-block'},
-                ),
-
-                html.Div(
-                    [html.Span("Prediction", style={'font-family' : 'calibri', 'font-weight': '300', 'font-size': '20px', 'display': 'block'}),
-                     html.Span("Due to the lower epoch defined (for fast online load), the prediction may be innacurate", style={'font-family' : 'calibri', 'font-weight': '300', 'font-size': '14px', 'line-height' : '40px', 'display': 'block'}),
-                    dcc.Graph(figure=fig_prediction)
-                    ],
-                    style ={'width': '29%',
-                            'padding' :'1%',
-                            'margin': '1%',
-                            'font-size': '25px',
-                            'border-radius': '10px',
-                            'background': '#fff',
-                            'display': 'inline-block'},
-                ),
-
-            ],
-            style={'max-width': '1500px',
-                   'margin': '0 auto',
-                   'display': 'flex',
-                   'flex-wrap': 'wrap'}  # Set the background color to #000 (black)
-        ),
-      '''
 
         # Graphs fifth row
         html.Div(
@@ -891,19 +838,12 @@ app.layout = html.Div(
                             'background': '#fff',
                             'display': 'inline-block'},
                 ),
-
-
-
             ],
             style={'max-width': '1500px',
                    'margin': '0 auto',
                    'display': 'flex',
                    'flex-wrap': 'wrap'}  # Set the background color to #000 (black)
         ),
-
-
-
-        
 
 
         
